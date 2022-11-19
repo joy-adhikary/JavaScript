@@ -38,13 +38,3 @@ var joy,roy,hlw;
 joy=10,roy="hey boss",hlw="xxx"; // same line a different  data type er value assign kora jai . ==> int , string , string 
 
 console.log(joy,roy,hlw)
-
-
-// javaScript string a index diye value change kora jai nah 
-
-let str="java";
-str[0]="x";
-console.log(str);  // output => java
-
-
-//javaScript a number er kahine ashe kisu like 

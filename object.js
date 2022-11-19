@@ -1,5 +1,6 @@
 
-// obj hocche akta structure jeitar majhe je kono kisu thakte pare as like interface 
+// obj hocche akta key value type structure jeitar majhe je kono kisu thakte pare as like interface 
+//left side i mean key sob somoi string e hobe 
 
 // You can create a const object:
 const car = {
@@ -14,9 +15,10 @@ car.color = "red";
 car.owner = "Johnson";
 
 console.log(car)
+console.log(typeof(car))
+
 
 // obj er majhe obj 
-
 let person = {
     firstname:'joy',
     lastname:'adhikary',
@@ -45,3 +47,23 @@ console.log(person.address.Block)
 console.log(person['address']['Block'])
 
 console.log(person['address']['Building_info']['building_num']) // person-> address-> building_info-> building_num
+
+
+// creating obj propatyes / obj value 
+
+person.address.area='9c';
+person.demo='hey';
+
+console.log(person)
+
+
+// deleting obj pro
+
+delete person.demo;
+console.log(person)
+
+//Checking if a property exists
+//The in operator returns true if the propertyName exists in the objectName.
+
+console.log('address' in person); // true as found 
+
