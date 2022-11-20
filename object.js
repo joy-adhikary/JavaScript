@@ -15,6 +15,7 @@ car.color = "red";
 car.owner = "Johnson";
 
 console.log(car)
+
 console.log(typeof(car))
 
 
