@@ -179,3 +179,33 @@ function sum3(number) {
 let ex5 = sum3(10);
 console.log(ex5);
 
+// reusing same funtion using recurtion 
+//num the parameter of the countdown() function, and the values passed to the countdown() function 6 is the arguments.
+function countdown(num) {
+    if (num <= 1) {
+        return console.log(num);
+    }
+    else {
+         console.log(num);
+         countdown(num-1);
+    }
+}
+let ex6 = countdown(6);
+
+
+// default value 
+
+function joy4( name='joy',id=062,dept='cse'){
+   return {name,id,dept,} // { } use na korle just akta value return korto seita holo dept kintu akn akta full obj pass korbe 
+   //return name,id,dept;  //try this 
+}
+
+let ex7=joy4();    //used default values 
+console.log(ex7);
+
+ex7=joy4(undefined,undefined,'EEE') // for 1st 2 perameters it will use the default values and for 3rd one it will use the argument values 
+console.log(ex7);
+
+function joy( toy , array=[]){
+    array.push()
+}
