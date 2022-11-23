@@ -206,6 +206,29 @@ console.log(ex7);
 ex7=joy4(undefined,undefined,'EEE') // for 1st 2 perameters it will use the default values and for 3rd one it will use the argument values 
 console.log(ex7);
 
-function joy( toy , array=[]){
-    array.push()
+
+// this one is for local value changes 
+
+function joy5(toy,array=[]){
+    array.push(toy)
+    return array;
 }
+let ex8=joy5('joy adhikary');
+console.log(ex8);
+
+ex8=joy5('id 18192103062'); // joy adhikary, id 18192103062 hobe nah .. karon local change hoi just 
+console.log(ex8);
+
+// but this one will change in global value 
+
+let array1=[];
+function joy6(toy,array1){
+    array1.push(toy)
+    return array1;
+}
+
+let ex9 = joy6('joy adhiakry',array1);
+console.log(ex9);
+
+ ex9 = joy6('id 18192103062',array1);
+ console.log(ex9); // console.log(array1) both are same .. and providing the same output 

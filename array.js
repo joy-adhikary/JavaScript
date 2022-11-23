@@ -105,3 +105,15 @@ console.log(arr2);
 let point3 = [40, 100, 1, 5, 25, 10];
 point3.sort(function(a,b){return a-b});
 console.log(point3)
+
+
+const ratings = [
+    {user: 'John',score: 3},
+    {user: 'Jane',score: 4},
+    {user: 'David',score: 5},
+    {user: 'Peter',score: 2},
+];
+
+for(let x of ratings){
+    console.log(x.score);
+}

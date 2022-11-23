@@ -4,9 +4,10 @@
 
 // You can create a const object:
 const car = {
-type:"Fiat", 
-model:"500",
-color:"white" };
+    type: "Fiat",
+    model: "500",
+    color: "white"
+};
 
 // You can change a property:
 car.color = "red";
@@ -16,30 +17,30 @@ car.owner = "Johnson";
 
 console.log(car)
 
-console.log(typeof(car))
+console.log(typeof (car))
 
 
 // obj er majhe obj 
 let person = {
-    firstname:'joy',
-    lastname:'adhikary',
-    email:'joyadhikary@gmail.com',
-    phone:'017188888888',
-    address:{
-        street:'joy road',
-        city : 'dhaka',
-        Block:'H',
-        Building_info:{
+    firstname: 'joy',
+    lastname: 'adhikary',
+    email: 'joyadhikary@gmail.com',
+    phone: '017188888888',
+    address: {
+        street: 'joy road',
+        city: 'dhaka',
+        Block: 'H',
+        Building_info: {
             building_num: 152,
-            floor :6,
-            flat_num:'29A'
+            floor: 6,
+            flat_num: '29A'
         }
     }
 }
 
 // .(dot) diye diye access korty hobe or array er index er mto kore print kora jabe .
 
-console.log(person.firstname) 
+console.log(person.firstname)
 
 console.log(person['firstname'])
 
@@ -52,8 +53,8 @@ console.log(person['address']['Building_info']['building_num']) // person-> addr
 
 // creating obj propatyes / obj value 
 
-person.address.area='9c';
-person.demo='hey';
+person.address.area = '9c';
+person.demo = 'hey';
 
 console.log(person)
 
@@ -68,3 +69,19 @@ console.log(person)
 
 console.log('address' in person); // true as found 
 
+
+
+// inherite object 
+
+let joy7 = {
+    name: 'joy',
+    last_name: 'adhikary',
+    id: 062,
+    dpt: 'cse',
+}
+
+// const name = new type_of_which_copy(name_of_main_function);
+
+const joy8 = new Object(joy7);
+
+console.log(joy8);
