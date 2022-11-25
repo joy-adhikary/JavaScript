@@ -34,7 +34,7 @@ let joy1 = new Map(
 let value = joy1.get("apples");
 console.log(value);
 
-for (values of joy1) {
+for (let values of joy1) {
     console.log(values);
 }
 
