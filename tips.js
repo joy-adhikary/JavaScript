@@ -63,3 +63,15 @@ eitar equivalent holo
 let x=data.name || 6666
 
 
+8. map vs foreach 
+
+so basically  akta methes ashe je foreach modify kore r map array ke modify kore nah . but this steatment is not true .
+lets see an example : 
+
+let arr1=[1, 2, 3, 4 ]
+let result1=arr1.foreach( (x,i,a)=>( a[i]=x*2 ))
+console.log( "array 1 is ", result1) // undefined 
+
+let result2=arr1.map( (x,i,a)=>( a[i]=x*2 ))
+console.log( "array 1 is ", result1)  // 2 4 6 8 
+
