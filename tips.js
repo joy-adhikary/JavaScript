@@ -75,3 +75,10 @@ console.log( "array 1 is ", result1) // undefined
 let result2=arr1.map( (x,i,a)=>( a[i]=x*2 ))
 console.log( "array 1 is ", result1)  // 2 4 6 8 
 
+
+9. assigning and accing at the same time 
+
+const joy = {} 
+joy.name="joyAdhikary" / joy["name"] = "joyAdhikary"    // creating and assign property at the same time 
+console.log(joy)  // {name : joyAdhikary } 
+
